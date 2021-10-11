@@ -1,0 +1,220 @@
+@font-face {
+    font-family: "SFProNormal";
+    src: url(../font/StudioProTrial-Regular.otf);
+}
+@font-face {
+    font-family: "SFProBold";
+    src: url(../font/StudioProTrial-Bold.otf);
+}
+@font-face {
+    font-family: "SFProUltraBold";
+    src: url(../font/StudioProTrial-UltraBold.otf);
+}
+@font-face {
+    font-family: "SFProMedium";
+    src: url(../font/StudioProTrial-Medium.otf);
+}
+@font-face {
+    font-family: "SFProSemiBold";
+    src: url(../font/StudioProTrial-SemiBold.otf);
+}
+* {
+    box-sizing: border-box;
+}
+html, body{
+    width:100%;
+    height:100%;
+
+    margin:0;
+    padding:0;
+}
+#header{
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.92);
+    text-align: center;
+    height:45px;
+}
+
+.headerdva{
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    background-color: #fbfbfd;
+    font-size: 15px;
+    font-family: "SFProNormal";
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+#plavi_iphone{
+    width: 100%;
+    margin: 0px;
+    position: relative;
+  text-align: center;
+  color: white;
+}
+#zlatni_iphone{
+    width:100%
+}
+.centered{
+    position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "SFProUltraBold";
+  font-size: 40px;
+  color: #1d1d1f;
+}
+.centered_prviispod{
+    font-family: "SFProMedium";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #1d1d1f;
+}
+.linkovi_prvasl{
+    font-family: "SFProNormal";
+    position: absolute;
+    top: 23%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #0066cc;
+}
+.linkovi_prvasllink{
+    font-family: "SFProNormal";
+    position: absolute;
+    top: 23%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #0066cc;
+}
+.dva_linka{
+   color: #0066cc;
+}
+.centered_zlatni{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "SFProBold";
+    font-size: 40px;
+    color: #f5f5f7;
+}
+.centered_drugiispod{
+    font-family: "SFProMedium";
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fec2eb;
+}
+.linkovi_drugasl{
+    font-family: "SFProMedium";
+    position: absolute;
+    top: 67%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #0066cc;
+}
+.linkovi_drugasllink{
+    font-family: "SFProMedium";
+    position: absolute;
+    top: 67%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #0066cc;
+}
+#jabuka{
+   float:left;
+    
+    
+}
+#prvi_link{
+    float: left;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#Store{
+   
+    color:white;
+    
+   
+}
+#Mac{
+    /* display: inline-block; */
+    color:white;
+} 
+#iPad{
+    display: inline-block;
+    color:white;
+}
+#iPhone{
+    display: inline-block;
+    color:white;
+}
+#Watch{
+    display: inline-block;
+    color:white;
+}
+#TV{
+    display: inline-block;
+    color:white;
+}
+#Music{
+    display: inline-block;
+    color:white;
+}
+#Support{
+    display: inline-block;
+    color:white;
+}
+
+#jabuka{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+
+.jabuka_div{
+position:relative;
+}
+
+
+.link_div{
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-family: "SFProNormal"
+    
+}
+.header_sl{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: "SFProNormal"
+}
+.header_sl2{
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-family: "SFProNormal"
+}
