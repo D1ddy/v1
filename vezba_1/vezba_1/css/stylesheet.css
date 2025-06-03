@@ -18,13 +18,38 @@
     font-family: "SFProSemiBold";
     src: url(../font/StudioProTrial-SemiBold.otf);
 }
+/* @media only screen and (max-width: 600px)  {
+   .bodySlikeiTekst{
+        display: flex;
+        flex-direction: column;
+   }
+   .prviIphone{
+        z-index: 0;
+        position:absolute;
+        top: 15%;
+        height: 50%;
+   }
+   .drugiIphone{
+        position:absolute;
+        top: 50%;
+        height: 50%;
+   }
+   #paragrafHeaderDva{
+        display: none;
+    
+   }
+   #paragrafHeaderDvaTelefon{
+        display:inline-block;
+        font-size: 15px;
+        color:#1d1d1f;
+   }
+} */
 * {
     box-sizing: border-box;
 }
 html, body{
     width:100%;
     height:100%;
-
     margin:0;
     padding:0;
 }
@@ -34,66 +59,82 @@ html, body{
     text-align: center;
     height:45px;
 }
-
+.bodySlikeiTekst{
+        display: flex;
+        flex-direction: column;
+   }
+#paragrafHeaderDvaTelefon{
+    display: none;
+}
 .headerdva{
     text-align: center;
     width: 100%;
     height: 5%;
     background-color: #fbfbfd;
     font-size: 15px;
-    font-family: "SFProNormal";
-    
+    font-family: "SFProNormal";    
 }
 a{
     text-decoration: none;
 }
-
-
-
-
+.prviIphone{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #e3e3e7;
+}
+.drugiIphone{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #68415b;
+}
 #plavi_iphone{
-    width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
     margin: 0px;
-    position: relative;
-  text-align: center;
-  color: white;
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.textZaPlaviIphone{
+    margin-top: 2%;
+    grid-column-start:2;
+    grid-row-start: 1;
+    text-align: center;
+    align-self: flex-end;
+    
 }
 #zlatni_iphone{
-    width:100%
+    height: auto;
+    width: auto;
+    max-width: 50%;
+    max-height: 100%;
+    margin: 0px;
+    grid-column: 2/ span 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 .centered{
-    position: absolute;
-  top: 16%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-family: "SFProUltraBold";
   font-size: 40px;
   color: #1d1d1f;
 }
 .centered_prviispod{
     font-family: "SFProMedium";
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 20px;
     color: #1d1d1f;
 }
 .linkovi_prvasl{
     font-family: "SFProNormal";
-    position: absolute;
-    top: 23%;
-    left: 48%;
-    transform: translate(-50%, -50%);
     font-size: 16px;
     color: #0066cc;
 }
 .linkovi_prvasllink{
     font-family: "SFProNormal";
-    position: absolute;
-    top: 23%;
-    left: 53%;
-    transform: translate(-50%, -50%);
     font-size: 16px;
     color: #0066cc;
 }
@@ -101,45 +142,25 @@ a{
    color: #0066cc;
 }
 .centered_zlatni{
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-family: "SFProBold";
     font-size: 40px;
     color: #f5f5f7;
 }
 .centered_drugiispod{
     font-family: "SFProMedium";
-    position: absolute;
-    top: 64%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 20px;
     color: #fec2eb;
 }
 .linkovi_drugasl{
     font-family: "SFProMedium";
-    position: absolute;
-    top: 67%;
-    left: 48%;
     transform: translate(-50%, -50%);
     font-size: 16px;
     color: #0066cc;
 }
 .linkovi_drugasllink{
     font-family: "SFProMedium";
-    position: absolute;
-    top: 67%;
-    left: 53%;
-    transform: translate(-50%, -50%);
     font-size: 16px;
     color: #0066cc;
-}
-#jabuka{
-   float:left;
-    
-    
 }
 #prvi_link{
     float: left;
@@ -147,12 +168,8 @@ a{
     text-decoration: none;
     
 }
-
 #Store{
-   
-    color:white;
-    
-   
+    color:white;  
 }
 #Mac{
     /* display: inline-block; */
@@ -181,18 +198,6 @@ a{
 #Support{
     display: inline-block;
     color:white;
-}
-
-#jabuka{
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    top: 50%;
-    left: 32%;
-}
-
-.jabuka_div{
-position:relative;
 }
 
 
